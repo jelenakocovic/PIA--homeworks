@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="quiz.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<title>Quizing</title>
+
+<body>
+  <div class="m-0 p-0 h-100">
+
+    <div class="row" id="form">
+      <div class="col-6 mx-auto py-5 px-3 border border-secondary rounded" style=" background-color: antiquewhite;">
+        <h2>Ime igrača</h2>
+        <input type="name" class="rounded-input form-control my-4" id="name" placeholder="Unesi ime igrača..."
+          onkeyup="checkName()">
+        <input type="button" class="btn btn-primary float-right" value="Prijavi se" disabled="true" id="button"
+          onclick="proceed()">
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="rulesModal">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Pravila kviza</h4>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div> Vreme za odgovor na pitanje je <b>20 sekundi</b>.</div>
+            <div> Nakon odgovora na pitanje prikazuje se da li je odgovor tačan/netačan.</div>
+            <div> Ukoliko ne odgovorite u predvidjenom intervalu, učitava se sledeće pitanje.</div>
+            <div> Možete preskočiti pitanje bez mogućnosti povratka na njega kasnije.</div>
+            <div> Možete odustati od igre pri čemu se rezultat čuva.</div>
+            <div> Svaki tačan odgovor nosi <b>1 poen</b>.</div>
+            <div> Na kraju igre se prikazuje broj osvojenih poena.</div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="showQuestions()">Počni
+              kviz</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto" id="questions">
+      <div class="row">
+        <div class="col-6 ">
+          <img class="img-fluid" src="question-mark.jpg" width="40%" height="40%">
+        </div>
+
+        <div class="col-6 text-right">
+          <h2 id="timerDisplay"></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-9 question-wrapper" id="question-wrapper">
+          <div class="question py-5">
+            <h4><span class="label label-warning" id="qid"></span>
+              <span id="question"> </span>
+            </h4>
+          </div>
+          <ul id="answers">
+          </ul>
+
+          <div id="answerInput">
+
+            <div class="d-table-cell w-100">
+              <input type="text" value="" id="answerInputValue" class="rounded-input form-control my-4">
+            </div>
+            <div class="d-table-cell align-middle">
+              <input type="button" class="btn btn-success float-right" value="Potvrdi" id="btnConfirm"
+                onclick="checkAnswer()">
+            </div>
+
+          </div>
+          <br>
+          <div class="p-2">
+            <input id="giveUp" type="button" class="btn btn-danger float-left" value="Odustani"
+              onclick="showScorePage()">
+            <input id="nextQuestion" type="button" class="btn btn-primary float-right" value="Preskoči pitanje"
+              onclick="nextQuestion()">
+          </div>
+        </div>
+
+        <div class="col-3 answer-status">
+          <div class="icon text-success" id="correctAnswer">
+            <i class="checkmark-circle">✓</i>
+          </div>
+          <div class="icon text-danger" id="incorrectAnswer">
+            <i class="x-circle">&times;</i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mx-auto score-panel text-success" id="score-panel">
+      <div class="icon text-success">
+        <i class="checkmark">✓</i>
+      </div>
+      <h1>Success</h1>
+      <p id="message"></p>
+
+    </div>
+  </div>
+</body>
+
+</html>

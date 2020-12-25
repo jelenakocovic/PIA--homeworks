@@ -1,0 +1,129 @@
+{
+    "questions": [
+        {
+            "question": "Broj Pi(π) iznosi približno:",
+            "options": [
+                "3",
+                "15",
+                "3.14",
+                "6.1"
+            ],
+            "answer": "3.14"
+        },
+        {
+            "question": "Na kom poluostrvu se nalazi Italija?",
+            "options": [
+                "Balkanskom",
+                "Pirinejskom",
+                "Apeninskom",
+                "Arabijskom"
+            ],
+            "answer": "Apeninskom"
+        },
+        {
+            "question": "Šta je ortocentar?",
+            "options": [
+                "Tačka u kojoj se seku sve tri visine trougla",
+                "Jedno teme trougla",
+                "Centar kruga",
+                "Ništa od navedenog"
+            ],
+            "answer": "Tačka u kojoj se seku sve tri visine trougla."
+        },
+        {
+            "question": "Od inata nema goreg ____________",
+            "options": [],
+            "answer": "zanata"
+        },
+        {
+            "question": "Koje od ovih država su na obalama istog okeana?",
+            "options": [
+                "Južna Koreja i Indija",
+                "Indija i Maroko",
+                "Brazil i Francuska",
+                "Brazil i Peru"
+            ],
+            "answer": "Brazil i Francuska"
+        },
+        {
+            "question": "San Marino je grad-država u?",
+            "options": [
+                "Španiji",
+                "Italiji",
+                "Kini",
+                "Grčkoj"
+            ],
+            "answer": "Italiji"
+        },
+        {
+            "question": "Bivši prijatelj je gori nego ____________",
+            "options": [],
+            "answer": "neprijatelj"
+        },
+        {
+            "question": "Ko je bio vrhovni bog u grčkoj mitologiji?",
+            "options": [
+                "Had",
+                "Zevs",
+                "Posejdon",
+                "Ares"
+            ],
+            "answer": "Zevs"
+        },
+        {
+            "question": "Šta je potrebno biljkama za proces fotosinteze?",
+            "options": [
+                "Kiseonik, voda i sunčeva svetlost ",
+                "Minerali, kiseonik i sunčeva svetlost ",
+                "Ugljen dioksid, voda i sunčeva svetlost",
+                "Minerali, ugljen dioksid i sunčeva svetlost"
+            ],
+            "answer": "Ugljen dioksid, voda i sunčeva svetlost"
+        },
+        {
+            "question": "Iver ne pada daleko od ____________",
+            "options": [],
+            "answer": "klade"
+        },
+        {
+            "question": "Šta se meri galvanometrom?",
+            "options": [
+                "Struja",
+                "Težina",
+                "Pritisak",
+                "Toplota"
+            ],
+            "answer": "Struja"
+        },
+        {
+            "question": "Čega se mudar stidi, tim se lud ____________",
+            "options": [],
+            "answer": "ponosi"
+        },
+        {
+            "question": "Ukoliko za nekoga kažemo da ima demenciju, on je:",
+            "options": [
+                "Agresivan",
+                "Depresivan",
+                "Zaboravan",
+                "Euforičan"
+            ],
+            "answer": "Zaboravan"
+        },
+        {
+            "question": "Ko pita ne ____________",
+            "options": [],
+            "answer": "skita"
+        },
+        {
+            "question": "Braća Luj i Ogist Limijer stvorili su:",
+            "options": [
+                "Prvu filmsku kameru",
+                "Prvi avion ",
+                "Tramvaj",
+                "Telefon "
+            ],
+            "answer": "Prvu filmsku kameru"
+        }
+    ]
+}
